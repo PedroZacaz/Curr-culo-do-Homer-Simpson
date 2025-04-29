@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Página Principal -->
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="Estilo/estilo.css"/>
+    <title>Currículo</title>
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <td><h1>Currículo de Homer Jay Simpson</h1>
+          <td><img id="foto-perfil" src="imagens/perfil_homer.jpg" alt="Perfil"></td>
+        </tr>
+      </table> 
+    </header>
+      <hr>  
+      <button><a href="paginas/GALERIA.html">GALERIA</a></button>
+      <button><a href="paginas/CONTATO.html">CONTATO</a></button>
+      <hr>
+    <nav class="link-de-pag">
+      <a href="#dados">Dados Pessoais</a>
+      <a href="#formacao">Formação Acadêmica</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#video">Apresentação</a>
+    </nav>
+
+    <section id="dados">
+      <h2>Dados Pessoais</h2>
+      <p>Rua: 742 Evergreen Terrace <br></p>
+      Estado: Springfield, EUA   
+      <p>Telefone: <a href="tel:+19395550113">(939) 555-0113</a></p>
+      <p>Email: <a href="mailto:homerjsimpson@springmail.com">homerjsimpson@springmail.com </a></p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação Acadêmica</h2>
+      <p>Engenharia Química - Universidade de Springfield</p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência Profissional</h2>
+      <ol>
+        <li>Inspetor de Segurança – Usina Nuclear de Springfield (1979–atual)</li>
+        <li>Astronauta – NASA (Missão improvisada)</li>
+        <li>Vendedor de neve – Mr. Plow</li>
+        <li>Vocalista – Quarteto de Barbeiros</li>
+      </ol>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Resistência a explosões nucleares (involuntária)</li>
+        <li>Especialista em rosquinhas</li>
+        <li>Grunhidos comunicativos</li>
+        <li>Capacidade de trabalhar sob extrema distração</li>
+      </ul>
+    </section>
+
+    <section id="video">
+      <h2>Apresentação em Video</h2>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bGntXpS73Go?si=4tB-h4NBxaSx29T-&amp;start=11" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  </section>
+  <section>
+    <h2>Escute a minha voz</h2>
+    <button id="botaoSom">Aperte para escutar</button>
+
+    <script>
+      const sons = [
+        new Audio('sons/Doh 1.mp3'),
+        new Audio('sons/Doh 2.mp3'),
+        new Audio('sons/nerd.mp3'),
+        new Audio('sons/porco-aranha.m4a'),
+        new Audio('sons/Scream 1.mp3'),
+        new Audio('sons/Voicy_THE SIMPSONS.mp3')
+      ];
+  
+      let somAtual = 0;
+      let tocando = null; // Armazena o som atual que está tocando
+  
+      document.getElementById('botaoSom').addEventListener('click', function() {
+        // Se já tem um som tocando, para ele
+        if (tocando) {
+          tocando.pause();
+          tocando.currentTime = 0;
+        }
+  
+        // Toca o próximo som
+        tocando = sons[somAtual];
+        tocando.play();
+  
+        // Avança para o próximo som
+        somAtual++;
+        if (somAtual >= sons.length) {
+          somAtual = 0;
+        }
+      });
+    </script>
+  </section>
+      <hr>
+      <footer>
+        <p>© 2025 – Currículo fictício criado para o 1° Trabalho de Desenvolvimento Web.</p>
+      </footer>
+
+  </body>
+</html>

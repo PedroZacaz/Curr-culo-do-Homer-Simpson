@@ -1,0 +1,158 @@
+/*Corpo*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+  }
+/*fim*/
+
+/*Cabeçalho e Rodapé*/
+  header, footer {
+    background-color: #f4d03f;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+  }
+/*fim*/
+
+/*Titulo*/
+  h1, h2 {
+    color: #2c3e50;
+  }
+
+  h1{
+    color: #2c3e50;
+  }
+/*fim*/
+
+/*Barra de navegação*/
+  nav {
+    background-color: #f9e79f;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+  }
+/*fim*/
+ 
+/*Botões */ 
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button {
+    background-color: #2980b9;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1f618d;
+  }
+/*fim*/
+
+
+/*Classe do contato*/
+.formulario-cadastro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fcf3cf;
+    border: 1px solid #f1c40f;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .formulario-cadastro p {
+    margin-bottom: 15px;
+  }
+  
+  .formulario-cadastro input:not([type="checkbox"]):not([type="radio"]),
+  .formulario-cadastro select,
+  .formulario-cadastro textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .formulario-cadastro input[type="radio"],
+  .formulario-cadastro input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .formulario-cadastro input[type="submit"],
+  .formulario-cadastro input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .formulario-cadastro input[type="submit"]:hover,
+  .formulario-cadastro input[type="reset"]:hover {
+    background-color: #1e8449;
+  }
+/*fim*/ 
+
+/*Rodapé*/
+  footer {
+    font-size: 14px;
+    color: #555;
+    margin-top: 30px;
+  }
+/*fim*/
+
+/*Foto de perfil mds :O */
+  #foto-perfil {
+    width: 190px;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 40px;
+    padding: 10%;
+  }
+/*fim*/
+
+/*link de navegação para as pág*/
+  .link-de-pag a{
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    }
+
+  .link-de-pag a:hover{
+    background-color: #f4d03f;
+    color: rgb(0, 0, 0);  
+    font-weight: bold;
+    border-radius: 7px;
+  }
+/*fim*/
+
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #ffe015;
+}
